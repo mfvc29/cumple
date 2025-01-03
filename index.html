@@ -14,27 +14,36 @@
 <!-- partial:index.partial.html -->
 
 
-<body class="container"  onclick="playAudio()">
+
+
+
+
+
+<body class="container" onclick="toggleAudio()">
   <h1>Reproduce Sonido al Tocar</h1>
-    <audio id="audio" src="Instrumental.mp3"></audio>
-    <div id="lyrics">
-        <!-- Aquí puedes agregar la letra de la canción -->
-    </div>
-
-    <script>
-        function playAudio() {
-            const audio = document.getElementById('audio');
-            audio.play().catch(error => {
-                console.error('Error al intentar reproducir el audio:', error);
-            });
-        }
-    </script>
-
+  <audio id="audio" src="Instrumental.mp3"></audio>
+  <div id="lyrics">
+      <!-- Aquí puedes agregar la letra de la canción -->
   </div>
+
+  <script>
+    function toggleAudio() {
+      const audio = document.getElementById('audio');
+      if (audio.paused) {
+        audio.play().catch(error => {
+          console.error('Error al intentar reproducir el audio:', error);
+        });
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+
 
   <div id="texto-container"></div>
   <div class="night"></div>
   
+
   <div class="flowers">
     <div class="flower flower--1">
       <div class="flower__leafs flower__leafs--1">
@@ -357,7 +366,107 @@
     </div>
   </div>
   <script src="script.js"></script>
+
   <div class="bubbles">
+
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
+        <title>heart22</title>
+        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
+        fill="red" />      </svg>
+    </div>
+
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen3.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
+        <title>heart22</title>
+        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
+        fill="red" />      </svg>
+    </div>
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen12.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
+        <title>heart22</title>
+        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
+        fill="red" />      </svg>
+    </div>
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen4.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
+        <title>heart22</title>
+        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
+        fill="red" />      </svg>
+    </div>
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen13.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
+        <title>heart22</title>
+        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
+        fill="red" />      </svg>
+    </div>
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen6.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
     <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
         <title>heart22</title>
         <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
@@ -368,99 +477,124 @@
         <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
         fill="red" />      </svg>
     </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" 
-        fill="red" />
-           </svg>
-  
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen10.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen9.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen8.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen7.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen11.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen5.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
 
     
+
+   
+
+    <div class="bubble">
+      <svg class="heart" viewBox="0 0 32 32">
+          <title>heart22</title>
+          <defs>
+              <!-- Definición del clipPath con forma de corazón -->
+              <clipPath id="heart-clip">
+                  <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+              </clipPath>
+          </defs>
+          <!-- Imagen recortada con forma de corazón -->
+          <image href="imagen2.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+      </svg>
+   </div>
+
+   <div class="bubble">
+    <svg class="heart" viewBox="0 0 32 32">
+        <title>heart22</title>
+        <defs>
+            <!-- Definición del clipPath con forma de corazón -->
+            <clipPath id="heart-clip">
+                <path d="M16 29s-13-8.35-13-17.16S8.06 1 16 8.34C23.94 1 29 3.84 29 11.84 29 20.65 16 29 16 29Z" />
+            </clipPath>
+        </defs>
+        <!-- Imagen recortada con forma de corazón -->
+        <image href="imagen.jpg" width="32" height="32" x="0" y="0" clip-path="url(#heart-clip)" preserveAspectRatio="xMidYMid slice" />
+    </svg>
+  </div>
+
+
 </body>
 
 
